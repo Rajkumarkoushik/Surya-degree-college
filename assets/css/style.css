@@ -1,3 +1,152 @@
-h1{
-    color: brown;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+/* selectors  simple selectors, combinator selectors, pseudo class, pseudo element, attribute selectors */
+
+/* Simple selectors : Element, element to element, . class, # id, * universal  */
+/* @import url('https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&display=swap');
+
+body{
+    font-family: "Playwrite RO", cursive;
+}
+/* h1{
+    font-family: "Bytesized", sans-serif;
+} */
+
+
+/* h1, h2, h3, h4, h5, h6, a, p{
+    color: red;
+}  */
+
+
+
+
+/* Colors  hex hexadecimal colors, rgb red, green, blue , hsl hue, saturation, lightning*/
+
+/* 0-255 */
+/* h1{
+    color: rgb(255, 255, 0);
+} */
+
+/* a to f, 0-255 6 values r, g, b*/
+/* h1{
+    color: #fff;
+} */
+
+/* Hsl Colors 0 to 360 deg, 0 to 100%, 0 to 100% */
+/* h1{
+    color: hsl(0deg 51.14% 49.07%);
+    background-color: rgb(108 159 117);
+    text-align: center;
+    font-size: 47px;
+    font-weight: 600;
+    text-shadow: -7px -21px 5px #30cb13;
+}
+a{
+    font-size: 27px;
+    color: rgb(255, 255, 0);
+    background: rgb(34, 65, 78);
+    text-decoration: none;
+}
+p{
+    text-align: justify;
+    line-height: 23px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-indent: 50px;
+    text-transform: capitalize; 
+}
+
+.div{
+    background-image: url("../images/aboutpageimages/au-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+button{
+    padding: 10px 40px;
+    margin: 30px 50px;
+    border: 10px groove #21efc9;
+    border-radius: 22px;
+    font-size: 30px;
+    font-weight: 600;
+    color: red;
+    background: green;
+    border: none;
+} */
+
+img{
+    width: 100%;
+}
+.div{
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+   
+}
+table, th, td{
+    border: 2px solid #ac3456;
+}
+td, th{
+    text-align: center;
+    padding: 10px 0px;
+    font-weight: 900;
+}
+th{
+    color: #ac3456;
+    background-color: #000;
+}
+td{
+    color: #fff;
+    background-color: #1bca6a;
+}
+  
+/* Css positions static, sticky, fixed, relative, absolute */
+
+ button{
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+ }
+
+ .division{
+    position: relative;
+ }
+ .image-2{
+    width: 20%;
+    height: 20vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+ }
+ .image-3{
+    width: 20%;
+    height: 20vh;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+ }
+ .image-4{
+    width: 20%;
+    height: 20vh;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+ }
+ .image-5{
+    width: 20%;
+    height: 20vh;
+    position: absolute;
+    bottom: 100px;
+    right: 0px;
+ }
+
+
+/* Flex box, grid */
