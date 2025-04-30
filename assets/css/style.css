@@ -78,7 +78,7 @@ button{
     background: green;
     border: none;
 } */
-
+/* 
 img{
     width: 100%;
 }
@@ -106,11 +106,11 @@ th{
 td{
     color: #fff;
     background-color: #1bca6a;
-}
+} */
 
   
 /* Css positions static, sticky, fixed, relative, absolute */
-
+/* 
  button{
     position: fixed;
     bottom: 100px;
@@ -147,13 +147,13 @@ td{
     position: absolute;
     bottom: 100px;
     right: 0px;
- }
+ } */
 
 
  
 
 /* Flex box, grid */
-
+/* 
 .list-items{
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -180,4 +180,105 @@ td{
 .grid-11{
     grid-row: 5/7;
     grid-column: 2/4;
+} */
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.grid-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-images img:nth-child(2){
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.grid-images img:nth-child(7){
+    grid-column: 2/3;
+    grid-row: 3/5;
+}
+.grid-images img:nth-child(11){
+    grid-column: 1/3;
+    grid-row: 5/7;
+}
+.grid-images img:last-child{
+   transform: rotate(30deg);
+}
+
+
+/* Combinator, pseudo class, pseudo element */
+/* Descendent selector, child combinator, next sibling selector, sub sequient sibling combinator selector. */
+
+/* Descendent combinator selector */
+/* div h1{
+    color: #ac5635;
+} */
+
+/* child combinator selector */
+/* section > h1{
+    color: #ac5635;
+} */
+
+/*  next sibling combinator selector */
+/* section + h1{
+    color: #ac5635;
+} */
+
+/* sub sequent sibling combinator selector. */
+/* section ~ h1{
+    color: #ac5635;
+} */
+
+/* pseudo class : active, visited, hover, first-child, last child, nth-child, checked, focus...etc */
+/* h1{
+    color: red;
+    background-color: green;
+    transition: all 5s ease-in-out;
+}
+h1:hover{
+    color: green;
+    background-color: red;
+    transition: all 5s ease-in-out;
+} */
+
+a:active{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color: orange;
+}
+.section h1{
+color: red;
+}
+.section h1:nth-child(5){
+    color: green;
+    transform: rotate(90deg);
+}
+.section h1:first-child{
+    color: green;
+}
+.section h1:last-child{
+    color: green;
+}
+.check:checked{
+    width: 100px;
+    height: 100px;
+}
+.text:focus{
+    background-color: red;
+}
+
+.items{
+    /* transform: translateY(1400px); */
+    transform: scale(0);
+    transition: all 5s ease-in-out;
+}
+.list:hover .items{
+    /* transform: translateY(0px); */
+    transform: scale(1);
+    transition: all 5s ease-in-out;
 }
