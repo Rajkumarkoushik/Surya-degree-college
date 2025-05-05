@@ -1,8 +1,8 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+} */
 /* selectors  simple selectors, combinator selectors, pseudo class, pseudo element, attribute selectors */
 
 /* Simple selectors : Element, element to element, . class, # id, * universal  */
@@ -182,7 +182,7 @@ td{
     grid-column: 2/4;
 } */
 
-img{
+/* img{
     width: 100%;
     height: 100%;
 }
@@ -204,7 +204,7 @@ img{
 }
 .grid-images img:last-child{
    transform: rotate(30deg);
-}
+} */
 
 
 /* Combinator, pseudo class, pseudo element */
@@ -241,7 +241,7 @@ h1:hover{
     background-color: red;
     transition: all 5s ease-in-out;
 } */
-
+/* 
 a:active{
     color: red;
 }
@@ -270,15 +270,246 @@ color: red;
 }
 .text:focus{
     background-color: red;
-}
+} */
 
-.items{
-    /* transform: translateY(1400px); */
+/* .items{
+    transform: translateY(1400px);
     transform: scale(0);
     transition: all 5s ease-in-out;
 }
 .list:hover .items{
-    /* transform: translateY(0px); */
+    transform: translateY(0px);
     transform: scale(1);
     transition: all 5s ease-in-out;
+} */
+
+
+/* Pseudo element selectors :: after, before, first letter, first line, selection, marker..... */
+/* 
+ul li::before{
+    content: "\f101";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    content: "****";
+    color: green;
+    margin-right: 20px;
+}
+ul li::after{
+    content: "\f101";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    content: "****";
+    color: green;
+    margin-left: 20px;
+}
+p::first-line{
+    color: green;
+    font-size: 40px
+}
+li::marker{
+    color: green;
+    font-size: 40px;
+}
+
+::selection{
+    background-color: red;
+    color: yellow;
+}
+
+.div{
+    position: relative;
+    z-index: 2;
+}
+img{
+    width: 100%;
+    height: 100vh;
+}
+img:hover{
+    opacity: 0.7;
+}
+.head{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+button{
+    padding: 10px 20px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 3;
+} */
+
+
+/* display block, inline and inline block */
+/* span{
+    color: red;
+    font-size: 30px;
+    border: 2px solid green;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+} */
+/* 
+.division span{
+    width: 200px;
+    height: 5px;
+    background-color: green;
+    display: block;
+}
+.division{
+    position: relative;
+}
+.division span::before{
+    content: "";
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    background-color: red;
+    animation: move 2s linear infinite;
+}
+
+@keyframes move {
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 200px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+.loader span{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    margin: 0px 5px;
+    display: block;
+    border-radius: 50%;
+}
+.loader{
+    display: flex;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+}
+.loader span:first-child{
+    background-color: green;
+    animation: blink 1s linear infinite;
+}
+.loader span:nth-child(2){
+    background-color: blue;
+    animation: blink 2s linear infinite;
+}
+.loader span:nth-child(3){
+    background-color: black;
+    animation: blink 3s linear infinite;
+}
+.loader span:nth-child(4){
+    background-color: yellow;
+    animation: blink 4s linear infinite;
+}
+.loader span:last-child{
+    background-color: orange;
+    animation: blink 5s linear infinite;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} */
+
+/* How to center a div vertically and horizontally */
+
+/* .sec{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+} */
+
+/* .sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+} */
+
+/* .sec{
+    position: relative;
+    height: 100vh;
+}
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* img[alt="image1"]{
+    width: 30%;
+    height: 30vh;
+}
+img[src="./assets/images/au-2.png"]{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+img[alt="image3"]{
+    width: 20%;
+    height: 20vh;
+    border-radius: 50%;
+} */
+
+
+.sec{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+form{
+    border: 2px solid blue;
+    padding: 100px;
+    background: #e6172c;
+background: linear-gradient(90deg,rgba(230, 23, 44, 1) 6%, rgba(64, 36, 242, 1) 43%, rgba(36, 212, 162, 1) 81%);
+}
+input, textarea{
+    border: 2px solid green;
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 900;
+    color: brown;
+    margin: 10px 0px;
+    background-color: transparent;
+}
+input:focus{
+    border: 2px solid red;
+    background-color: aqua;
+}
+textarea{
+    width: 100%;
+    height: 200px;
+}
+
+.flex{
+    display: flex;
+    gap: 30px;
 }
