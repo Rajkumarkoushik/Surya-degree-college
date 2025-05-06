@@ -5,26 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>Athabasca University</title>
+    <title>Canada's Open University | Online learning | Athabasca University</title>
     <!-- Favicon -->
-     <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
      <!-- Font awesome cdn -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+    <!-- Style sheet -->
+     <link rel="stylesheet" href="./assets/css/style1.css">
 </head>
 <body>
-    <style>
-        h1{
-            color: green;
-        }
-        img{
-            width: 100vw;
-        }
-    </style>
+ 
     <!-- Header section start -->
-     <header>
-        <section>
-            <ul>
+     <header class="header-main">
+        <section class="header-section">
+            <ul class="header-links flex">
                 <li><a href="">MY AUlogin</a></li>
                 <li><a href="">Convocation</a></li>
                 <li><a href="">Nukskahtowin</a></li>
@@ -32,8 +26,27 @@
                 <li><a href="">News</a></li>
                 <li><a href="">Research</a></li>
                 <li><a href="">Alumni</a></li>
-                <li><a href="">Faculty</a></li>
-                <li><a href="">Support Services</a></li>
+                <li class="faculty">Faculty
+                    <ul class="faculty-links">
+                        <li><a href="">Faculty Of Business</a></li>
+                        <li><a href="">faculty of health disciplines</a></li>
+                        <li><a href="">Faculty of humanities and social science</a></li>
+                        <li><a href="">faculty of science and technology</a></li>
+                        <li><a href="">faculty of graduate studies</a></li>
+                    </ul>
+                </li>
+                <li class="faculty">Support Services
+                    <ul class="faculty-links">
+                        <li><a href="">support services home</a></li>
+                        <li><a href="">accessibility services</a></li>
+                        <li><a href="">program and course advising</a></li>
+                        <li><a href="">financial aid and awards</a></li>
+                        <li><a href="">tutoring and learning support</a></li>
+                        <li><a href="">exam services support</a></li>
+                        <li><a href="">mental health and wellness</a></li>
+                        <li><a href="">technical support</a></li>
+                    </ul>
+                </li>
                 <li><a href="">About AU</a></li>
             </ul>
         </section>
@@ -41,60 +54,63 @@
     <!-- Header section ends -->
 
     <!-- Navigation section starts -->
-     <nav>
-        <section>
-            <div>
-                <a href="./index.html">
-                    <img src="./logo.png" alt="Logo">
+     <nav class="nav-main">
+        <section class="nav-section flex">
+            <div class="nav-logo">
+                <a href="./index.html" class="flex">
+                    <img src="./assets/images/favicon.ico" alt="">
+                    <h5>Athabasca University</h5>
                 </a>
             </div>
-            <div>
-                <ul>
-                    <li><a href="">How AU Works</a>
-                    <ul>
-                        <li><a href="">How AU Works</a></li>
-                        <li><a href="">Getting Started</a></li>
-                        <li><a href="">Your Education your way</a></li>
-                        <li><a href="">Credit Transfer and credit for experience</a></li>
-                        <li><a href="">Indegnious Student support</a></li>
-                        <li><a href="">Accreditation</a></li>
-                    </ul>
+            <div class="flex">
+                <ul class="nav-links flex">
+                    <li class="nav-link"><a href="">How AU Works</a>
+                        <ul class="nav-sublinks">
+                            <li><a href="">How AU Works</a></li>
+                            <li><a href="">Getting Started</a></li>
+                            <li><a href="">Your Education your way</a></li>
+                            <li><a href="">Credit Transfer and credit for experience</a></li>
+                            <li><a href="">Indegnious Student support</a></li>
+                            <li><a href="">Accreditation</a></li>
+                        </ul>
                     </li>
                     <li><a href="">Programs and courses</a></li>
-                    <li><a href="">Applications and admissions</a>
-                    <ul>
-                        <li><a href="">How AU Works</a></li>
-                        <li><a href="">Getting Started</a></li>
-                        <li><a href="">Your Education your way</a></li>
-                        <li><a href="">Credit Transfer and credit for experience</a></li>
-                        <li><a href="">Indegnious Student support</a></li>
-                        <li><a href="">Accreditation</a></li>
-                    </ul>
+                    <li class="nav-link"><a href="">Applications and admissions</a>
+                        <ul class="nav-sublinks">
+                            <li><a href="">How AU Works</a></li>
+                            <li><a href="">Getting Started</a></li>
+                            <li><a href="">Your Education your way</a></li>
+                            <li><a href="">Credit Transfer and credit for experience</a></li>
+                            <li><a href="">Indegnious Student support</a></li>
+                            <li><a href="">Accreditation</a></li>
+                        </ul>
                     </li>
-                    <li><a href="">Current students</a>
-                    <ul>
-                        <li><a href="">How AU Works</a></li>
-                        <li><a href="">Getting Started</a></li>
-                        <li><a href="">Your Education your way</a></li>
-                        <li><a href="">Credit Transfer and credit for experience</a></li>
-                        <li><a href="">Indegnious Student support</a></li>
-                        <li><a href="">Accreditation</a></li>
-                    </ul>
+                    <li class="nav-link"><a href="">Current students</a>
+                        <ul class="nav-sublinks">
+                            <li><a href="">How AU Works</a></li>
+                            <li><a href="">Getting Started</a></li>
+                            <li><a href="">Your Education your way</a></li>
+                            <li><a href="">Credit Transfer and credit for experience</a></li>
+                            <li><a href="">Indegnious Student support</a></li>
+                            <li><a href="">Accreditation</a></li>
+                        </ul>
                     </li>
-                    <li><a href="">Student support</a>
-                        <ul>
-                        <li><a href="">How AU Works</a></li>
-                        <li><a href="">Getting Started</a></li>
-                        <li><a href="">Your Education your way</a></li>
-                        <li><a href="">Credit Transfer and credit for experience</a></li>
-                        <li><a href="">Indegnious Student support</a></li>
-                        <li><a href="">Accreditation</a></li>
+                    <li class="nav-link"><a href="">Student support</a>
+                        <ul class="nav-sublinks">
+                            <li><a href="">How AU Works</a></li>
+                            <li><a href="">Getting Started</a></li>
+                            <li><a href="">Your Education your way</a></li>
+                            <li><a href="">Credit Transfer and credit for experience</a></li>
+                            <li><a href="">Indegnious Student support</a></li>
+                            <li><a href="">Accreditation</a></li>
                         </ul>
                     </li>
                     <li><a href="">Help</a></li>
                 </ul>
-                <button>Apply</button>
-                <i class="fa-solid fa-magnifying-glass"></i>
+               <div>'
+                <button class="nav-btn">Apply</button>
+                <i class="fa-solid fa-magnifying-glass search-bar"></i>
+               </div>
             </div>
         </section>
      </nav>

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+}
+
+/* 
+1. Header section.
+2. Nav section.
+*/
+
+
+/* 1. Header section starts. */
+.header-main{
+    background-color: #0072A5;
+    padding: 15px 20px;
+}
+.header-links{
+    justify-content: flex-end;
+    gap: 30px;
+}
+.header-links a, .header-links li{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.header-links a:hover, .header-links li:hover{
+    text-decoration: underline;
+}
+.faculty-links, .nav-sublinks{
+    background-color: #fff;
+    width: 300px;
+    padding: 10px 30px;
+    display: none;
+    position: absolute;
+    top: 17px;
+    left: -100px;
+    transition: all 2s ease-in-out;
+    z-index: +999;
+}
+.faculty-links a, .nav-sublinks a{
+    color: #0072A5;
+}
+.faculty-links li, .nav-sublinks li{
+    padding: 5px 0px;
+}
+.faculty-links li:hover, .nav-sublinks li:hover{
+    background-color: #ada8a8;
+    text-decoration: none;
+}
+.faculty:hover .faculty-links, .nav-link:hover .nav-sublinks{
+    display: block;
+    transition: all 2s ease-in-out;
+}
+.faculty, .nav-link{
+    position: relative;
+}
+/* 1. Header section ends. */
+
+/* 2. Nav section starts. */
+.nav-main{
+    background-color: #1B365D;
+    padding: 10px 20px;
+}
+.nav-section{
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    gap: 30px;
+    align-items: center;
+}
+.nav-links a{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+}
+.nav-logo a{
+    font-size: 20px;
+    color: #fff;
+}
+.nav-sublinks{
+    display: none;
+}
+.nav-sublinks a{
+    color: #1B365D;
+}
+.nav-btn{
+    padding: 10px 20px;
+    border: 2px solid #f0072a;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.8s ease-in-out;
+}
+.nav-btn:hover{
+    background-color: #f0072a;
+    transition: all 0.8s ease-in-out;
+}
+.search-bar{
+    color: #fff;
+}
+.nav-link::after{
+    content: "\f103";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    color: #f0072a;
+}
+/* 2. Nav section ends. */
+
