@@ -12,21 +12,58 @@ li{
 }
 a{
     text-decoration: none;
+    text-transform: capitalize;
+}
+h1,h2,h3,h4,h5,h6{
+    padding-bottom: 10px;
+}
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 44px;
+}
+h3{
+    font-size: 40px;
+}
+h4{
+    font-size: 36px;
+}
+h5{
+    font-size: 32px;
+}
+h6{
+    font-size: 20px;
+    color: #1B365D;
+    font-weight: 600;
+}
+p{
+    font-size: 16px;
+    padding-bottom: 20px;
 }
 .flex{
     display: flex;
 }
 
+:root{
+    --primary-color : #0072A5;
+    --secondary-color : #1B365D;
+    --third-color : #F15A22;
+    --fourth-color : #ada8a8;
+}
+
 /* 
 1. Header section.
 2. Nav section.
+3. Home Banner section.
 */
 
 
 /* 1. Header section starts. */
 .header-main{
-    background-color: #0072A5;
+    background-color: var(--primary-color);
     padding: 15px 20px;
+    
 }
 .header-links{
     justify-content: flex-end;
@@ -59,7 +96,7 @@ a{
     padding: 5px 0px;
 }
 .faculty-links li:hover, .nav-sublinks li:hover{
-    background-color: #ada8a8;
+    background-color: var(--fourth-color);
     text-decoration: none;
 }
 .faculty:hover .faculty-links, .nav-link:hover .nav-sublinks{
@@ -73,7 +110,7 @@ a{
 
 /* 2. Nav section starts. */
 .nav-main{
-    background-color: #1B365D;
+    background-color: var(--secondary-color);
     padding: 10px 20px;
 }
 .nav-section{
@@ -81,27 +118,27 @@ a{
     align-items: center;
 }
 .nav-links{
-    gap: 30px;
     align-items: center;
+    gap: 30px;
 }
 .nav-links a{
     color: #fff;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
 }
-.nav-logo a{
-    font-size: 20px;
-    color: #fff;
+.nav-logo img{
+    width: 100%;
+    height: 50px;
 }
 .nav-sublinks{
     display: none;
 }
 .nav-sublinks a{
-    color: #1B365D;
+    color: var(--primary-color);
 }
 .nav-btn{
     padding: 10px 20px;
-    border: 2px solid #f0072a;
+    border: 2px solid var(--third-color);
     background-color: transparent;
     color: #fff;
     border-radius: 5px;
@@ -109,7 +146,7 @@ a{
     transition: all 0.8s ease-in-out;
 }
 .nav-btn:hover{
-    background-color: #f0072a;
+    background-color: var(--third-color);
     transition: all 0.8s ease-in-out;
 }
 .search-bar{
@@ -119,7 +156,132 @@ a{
     content: "\f103";
     font-family: "Font Awesome 5 free";
     font-weight: 900;
-    color: #f0072a;
+    font-size: 12px;
+    color: #F15A22;
 }
 /* 2. Nav section ends. */
 
+/* 3. Home banner section starts. */
+.banner-main{
+    background-image: url("../images/hero-image-bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.banner-main::after{
+    content: "";
+    background-color: #2423234d;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.banner-division{
+    height: 100vh;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding: 20px 30px;
+    position: relative;
+    z-index: +11;
+}
+.banner-heading{
+    position: relative;
+}
+.banner-heading::after{
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: var(--third-color);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.banner-heading h1, .banner-content{
+    color: #fff;
+    padding-left: 30px;
+    font-weight: 900;
+}
+.banner-button button{
+    border-radius: 50%;
+    padding: 9px 12px;
+    border: none;
+    background-color: var(--third-color);
+}
+.banner-button i{
+    color: #fff;
+    cursor: pointer;
+}
+.banner-button button:hover{
+    animation: blink 2s linear infinite;
+}
+@keyframes blink {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.banner-button a{
+    color: #fff;
+    font-weight: 600;
+}
+.banner-button a:hover{
+    text-decoration: underline;
+}
+
+/* 3. Home banner section ends. */
+
+/* 4. Home admission section starts. */
+.admission-main{
+    padding: 30px;
+}
+.admission-card img{
+    height: 30px;
+}
+.admission-img{
+    padding: 15px 20px;
+    border-radius: 50%;
+}
+.admission-card {
+    gap: 10px;
+    align-items: center;
+}
+.admission-division{
+    justify-content: space-between;
+}
+.img1{
+    border: 10px solid var(--third-color);
+}
+.img2{
+    border: 10px solid var(--fourth-color);
+}
+.img3{
+    border: 10px solid var(--primary-color);
+}
+.img4{
+    border: 10px solid var(--secondary-color);
+}
+.admission-button a{
+    color: var(--secondary-color);
+    font-size: 13px;
+}
+.admission-button a:hover{
+    color: var(--primary-color);
+}
+.admission-button button{
+    padding: 2px 7px;
+}
+.admission-button i{
+    font-size: 8px;
+}
+.admission-button{
+    padding-bottom: 10px;
+}
+/* 4. Home admission section ends. */
