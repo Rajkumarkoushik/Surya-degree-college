@@ -14,6 +14,9 @@ a{
     text-decoration: none;
     text-transform: capitalize;
 }
+a:hover{
+    text-decoration: underline;
+}
 h1,h2,h3,h4,h5,h6{
     padding-bottom: 10px;
 }
@@ -21,16 +24,16 @@ h1{
     font-size: 48px;
 }
 h2{
-    font-size: 44px;
+    font-size: 42px;
 }
 h3{
-    font-size: 40px;
-}
-h4{
     font-size: 36px;
 }
+h4{
+    font-size: 30px;
+}
 h5{
-    font-size: 32px;
+    font-size: 24px;
 }
 h6{
     font-size: 20px;
@@ -38,8 +41,9 @@ h6{
     font-weight: 600;
 }
 p{
-    font-size: 16px;
+    font-size: 15px;
     padding-bottom: 20px;
+    font-weight: 400;
 }
 .flex{
     display: flex;
@@ -62,8 +66,7 @@ p{
 /* 1. Header section starts. */
 .header-main{
     background-color: var(--primary-color);
-    padding: 15px 20px;
-    
+    padding: 15px 20px;  
 }
 .header-links{
     justify-content: flex-end;
@@ -75,9 +78,6 @@ p{
     font-weight: 400;
     cursor: pointer;
 }
-.header-links a:hover, .header-links li:hover{
-    text-decoration: underline;
-}
 .faculty-links, .nav-sublinks{
     background-color: #fff;
     width: 300px;
@@ -86,8 +86,8 @@ p{
     position: absolute;
     top: 17px;
     left: -100px;
-    transition: all 2s ease-in-out;
-    z-index: +999;
+    transition: all 0.8s ease-in-out;
+    z-index: +9999;
 }
 .faculty-links a, .nav-sublinks a{
     color: #0072A5;
@@ -101,7 +101,7 @@ p{
 }
 .faculty:hover .faculty-links, .nav-link:hover .nav-sublinks{
     display: block;
-    transition: all 2s ease-in-out;
+    transition: all 0.8s ease-in-out;
 }
 .faculty, .nav-link{
     position: relative;
@@ -112,6 +112,9 @@ p{
 .nav-main{
     background-color: var(--secondary-color);
     padding: 10px 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
 }
 .nav-section{
     justify-content: space-between;
@@ -159,6 +162,14 @@ p{
     font-size: 12px;
     color: #F15A22;
 }
+.nav-last{
+    align-items: center;
+    gap: 20px;
+}
+.nav-last a{
+    color: #fff;
+    padding-left: 20px;
+}
 /* 2. Nav section ends. */
 
 /* 3. Home banner section starts. */
@@ -171,7 +182,7 @@ p{
 }
 .banner-main::after{
     content: "";
-    background-color: #2423234d;
+    background-color: #24232360;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -209,12 +220,13 @@ p{
     padding: 9px 12px;
     border: none;
     background-color: var(--third-color);
+    /* animation: blink 2s linear infinite; */
 }
 .banner-button i{
     color: #fff;
     cursor: pointer;
 }
-.banner-button button:hover{
+.banner-button:hover button{
     animation: blink 2s linear infinite;
 }
 @keyframes blink {
@@ -232,9 +244,6 @@ p{
     color: #fff;
     font-weight: 600;
 }
-.banner-button a:hover{
-    text-decoration: underline;
-}
 
 /* 3. Home banner section ends. */
 
@@ -243,10 +252,10 @@ p{
     padding: 30px;
 }
 .admission-card img{
-    height: 30px;
+    height: 25px;
 }
 .admission-img{
-    padding: 15px 20px;
+    padding: 12px 17px;
     border-radius: 50%;
 }
 .admission-card {
@@ -257,20 +266,21 @@ p{
     justify-content: space-between;
 }
 .img1{
-    border: 10px solid var(--third-color);
+    border: 8px solid var(--third-color);
 }
 .img2{
-    border: 10px solid var(--fourth-color);
+    border: 8px solid var(--fourth-color);
 }
 .img3{
-    border: 10px solid var(--primary-color);
+    border: 8px solid var(--primary-color);
 }
 .img4{
-    border: 10px solid var(--secondary-color);
+    border: 8px solid var(--secondary-color);
 }
 .admission-button a{
     color: var(--secondary-color);
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 600;
 }
 .admission-button a:hover{
     color: var(--primary-color);
@@ -285,3 +295,294 @@ p{
     padding-bottom: 10px;
 }
 /* 4. Home admission section ends. */
+
+/* 5. Online offerings section starts. */
+.online-offerings-main{
+    background-image: url("../images/home-stats-bg-md.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px;
+}
+.online-offerings-image img{
+    width: 100%;
+    height: 100%;
+}
+.online-offerings-division, .online-offerings-cards,.select-path-cards{
+    gap: 30px;
+}
+.online-offerings-cards{
+    padding-top: 3rem;
+}
+.online-offerings-content h3{
+    padding-bottom: 50px;
+    color: var(--secondary-color);
+}
+.online-offerings-cards h6{
+    color: var(--third-color);
+}
+.online-offerings-cards h2{
+    color: var(--secondary-color);
+    font-size: 4rem;
+}
+.online-offerings-cards p{
+    color: var(--secondary-color);
+    font-size: 14px;
+}
+.online-offerings-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.online-offerings-button a{
+    color: var(--primary-color);
+}
+/* 5. Online offerings section ends. */
+
+/* 6. Select path section starts. */
+.select-path-main{
+    padding: 3rem 2rem;
+}
+.select-path-card-image img{
+    height: 50px;
+}
+.select-path-card-image{
+    border: 4px solid var(--third-color);
+    border-radius: 50%;
+    width: 33%;
+    padding: 10px;
+    height: 22%;
+    background-color: #fff;
+}
+.select-path-card{
+    background-color: var(--secondary-color);
+    padding: 3rem 1rem;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+.select-path-card:hover{
+    transform: scale(1.04);
+    transition: all 0.4s ease-in-out;
+}
+.select-path-card h6{
+    color: #fff;
+    position: relative;
+    padding: 20px 0px;
+}
+.select-path-card h6::after{
+    content: "";
+    background-color: var(--third-color);
+    width: 20%;
+    height: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.select-path-card p{
+    color: #fff;
+    padding: 20px 0px;
+}
+.select-path-card-button a{
+    font-size: 12px;
+}
+.select-path-head{
+    text-align: center;
+    padding: 20px 0px;
+    color: var(--secondary-color);
+}
+/* 6. Select path section ends. */
+
+/* 7. Testimonial section starts. */
+.testimonial-main{
+    background-image: url("../images/shield-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 8rem;
+}
+.testimonial-image img{
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    border: 8px solid var(--third-color);
+}
+.testimonial-division{
+    gap: 20px;
+    align-items: center;
+}
+.testimonial-content h5::before{
+    content: "\f10d";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    color: var(--third-color);
+    padding-right: 10px;
+}
+.testimonial-content h5::after{
+    content: "\f10e";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    color: var(--third-color);
+    padding-left: 10px;
+}
+.testimonial-content h5{
+    color: var(--secondary-color);
+}
+/* 7. Testimonial section ends. */
+
+/* 8. Au news section starts. */
+.au-news-main{
+    padding: 5rem 8rem;
+}
+.au-news-heading{
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.au-news-btn{
+    color: #000;
+}
+.au-news-btn:hover{
+    color: #fff;
+}
+.au-news-cards{
+    gap: 30px;
+}
+.au-news-card img{
+    width: 100%;
+}
+.au-news-card{
+    box-shadow: 0px 0px 3px 1px #777676;
+    position: relative;
+}
+.au-news-content{
+    padding: 10px 20px;
+}
+.au-news-content p{
+    padding: 10px 0px;
+    font-size: 12px;
+}
+.au-news-card h6{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    width: 30%;
+    color: #fff;
+}
+.au-news-content div{
+    align-items: center;
+    gap: 10px;
+}
+.au-news-content div i{
+    color: var(--third-color);
+}
+
+/* 8. Au news section ends. */
+
+/* 9. Visit main section starts. */
+.visit-main{
+    background-image: url("../images/indegenious-bg-md.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 10rem;
+    text-align: center;
+    color: #fff;
+    background-attachment: fixed;
+}
+.visit-main h5{
+    position: relative;
+    padding-bottom: 30px;
+}
+.visit-main h5::after{
+    content: "";
+    background-color: var(--third-color);
+    height: 5px;
+    width: 10%;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.visit-main-para{
+    padding-top: 5rem;
+}
+/* 9. Visit main section ends. */
+
+/* 10. Footer section starts. */
+.footer-main{
+    background-color: var(--secondary-color);
+    padding: 5rem 10rem;
+    color: #fff;
+}
+.footer-division{
+    gap: 4rem;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.footer-links{
+    justify-content: space-between;
+}
+.footer-links h6{
+    color: #fff;
+}
+.footer-links li::after{
+    content: "\3e";
+    font-family: "Font Awesome 5 free";
+    font-size: 900;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 10px;
+}
+.footer-links li{
+    color: #fff;
+    padding: 7px 0px;
+}
+.footer-links a{
+    color: #fff;
+}
+.footer-social-media i{
+    font-size: 40px;
+    padding: 10px 0px;
+    padding-right: 10px;
+}
+.footer-social-media i:hover{
+    transform: scale(1.1);
+}
+.footer-last-links a{
+    font-weight: 700;
+}
+.footer-au-faculty, .footer-para{
+    padding: 15px 0px;
+}
+/* 10. Footer section ends. */
+
+/* 11. Copy right section starts. */
+.copy-right-main{
+    background-color: var(--primary-color);
+    padding: 2rem 5rem;
+}
+.copy-right-division{
+    justify-content: space-between;
+    color: #fff;
+}
+.copy-right-links{
+    gap: 20px;
+}
+.copy-right-links a{
+    color: #fff;
+}
+.back-to-top{
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    z-index: 99999;
+}
+.back-to-top button{
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    border: none;
+}
+.back-to-top button a{
+    color: #fff;
+}
+/* 11. Copy right section ends. */
+

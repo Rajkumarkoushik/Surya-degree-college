@@ -12,6 +12,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Style sheet -->
      <link rel="stylesheet" href="./assets/css/style1.css">
+     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
  
@@ -104,9 +105,11 @@
                             <li><a href="">Accreditation</a></li>
                         </ul>
                     </li>
+                </ul>
+               <div class="flex nav-last">
+                <ul>
                     <li><a href="">Help</a></li>
                 </ul>
-               <div>'
                 <button class="nav-btn">Apply</button>
                 <i class="fa-solid fa-magnifying-glass search-bar"></i>
                </div>
@@ -204,14 +207,15 @@
     <!-- Admission section ends -->
 
     <!-- online offerings Section starts -->
-     <section>
-        <div>
-            <div>
-                <img src="./home-stats-shield-img.webp" alt="Online Offerings">
+     <section class="online-offerings-main">
+        <div class="online-offerings-division flex">
+            <div class="online-offerings-image">
+                <img src="./assets/images/home-stats-shield-img.webp" alt="Online Offerings">
             </div>
-            <div>
-                <h2>Open your options with online offerings at Athabasca University</h2>
-                <div>
+            <div class="online-offerings-content">
+                <h3>Open your options with online offerings at Athabasca University</h3>
+                <hr>
+                <div class="flex online-offerings-cards">
                     <div>
                         <h6>More than</h6>
                         <h2>94%</h2>
@@ -228,7 +232,7 @@
                         <p>50,000 program and course alumni from over 100 countries.  </p>
                     </div>
                 </div>
-                <div>
+                <div class="banner-button online-offerings-button">
                     <button><i class="fa-solid fa-greater-than"></i></button>
                     <a href="">What Make AU unique?</a> 
                 </div>
@@ -238,45 +242,55 @@
     <!-- online offerings Section ends -->
 
     <!-- Select your path section starts -->
-     <section>
-        <div>
-            <h2>Select your path</h2>
-            <p>At AU, we are driven by a strong commitment to empower learners worldwide. As Canada's Open University, we embrace accessibility and flexibility, delivering exceptional online and distance learning opportunities. Our affordable courses, comprehensive undergraduate and graduate degree programs, and diverse professional development options aim to unlock the barriers of traditional education, fostering lifelong growth and success. Choose the online learning path that works for you!</p>
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <h4>Online undergraduate programs</h4>
+     <section class="select-path-main">
+        <div class="select-path-division">
+            <div class="select-path-head">
+                <h2>Select your path</h2>
+                <p>At AU, we are driven by a strong commitment to empower learners worldwide. As Canada's Open University, we embrace accessibility and flexibility, delivering exceptional online and distance learning opportunities. Our affordable courses, comprehensive undergraduate and graduate degree programs, and diverse professional development options aim to unlock the barriers of traditional education, fostering lifelong growth and success. Choose the online learning path that works for you!</p>
+            </div>
+            <div class="select-path-cards flex">
+                <div class="select-path-card">
+                    <div class="select-path-card-image">
+                        <img src="./assets/images/online-education.svg" alt="Online">
+                    </div>
+                    <h6>Online undergraduate programs</h6>
                     <p>We offer undergraduate degree programs, diplomas, and certificates in business, health, technology, arts, and more! Find a program and schedule that fits your lifestyle and goals.</p>
-                    <div>
+                    <div class="banner-button select-path-card-button">
                         <button><i class="fa-solid fa-greater-than"></i></button>
-                    <a href="">Explore AU undergraduate programs</a>
+                        <a href="">Explore AU undergraduate programs</a>
                     </div>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <h4>Online graduate programs</h4>
+                <div class="select-path-card">
+                    <div class="select-path-card-image">
+                        <img src="./assets/images/admision-form.svg" alt="Online">
+                    </div>
+                    <h6>Online graduate programs</h6>
                     <p>AU online graduate programs give you the knowledge and skills to advance your career. Earn a master's degree, doctoral degree, graduate diploma, or certificate.</p>
-                    <div>
+                    <div class="banner-button select-path-card-button">
                         <button><i class="fa-solid fa-greater-than"></i></button>
-                    <a href="">Explore AU graduate programs</a>
+                        <a href="">Explore AU graduate programs</a>
                     </div>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <h4>Online courses</h4>
+                <div class="select-path-card">
+                    <div class="select-path-card-image">
+                        <img src="./assets/images/file-transfer.svg" alt="Online Course">
+                    </div>
+                    <h6>Online courses</h6>
                     <p>Our online undergraduate and graduate courses are designed to fit perfectly into your schedule. We have over 850 options in a variety of subject areas!</p>
-                    <div>
+                    <div class="banner-button select-path-card-button">
                         <button><i class="fa-solid fa-greater-than"></i></button>
-                    <a href="">Explore AU courses</a>
+                        <a href="">Explore AU courses</a>
                     </div>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <h4>Online professional development</h4>
+                <div class="select-path-card">
+                    <div class="select-path-card-image">
+                        <img src="./assets/images/tuition.svg" alt="Online">
+                    </div>
+                    <h6>Online professional development</h6>
                     <p>Boost your continuing education with short, standalone courses or a series of courses that can be combined to earn a certificate. Explore our digital services to bring your organization's learning and development activities online.</p>
-                    <div>
+                    <div class="banner-button select-path-card-button">
                         <button><i class="fa-solid fa-greater-than"></i></button>
-                    <a href="">View professional development courses</a>
+                        <a href="">View professional development courses</a>
                     </div>
                 </div>
             </div>
@@ -285,15 +299,15 @@
     <!-- Select your path section ends -->
 
     <!-- Testimonial section starts -->
-     <section>
-        <div>
-            <div>
-                <img src="./success-stories-thumbnail2.webp" alt="Success Stories">
+     <section class="testimonial-main">
+        <div class="testimonial-division flex">
+            <div class="testimonial-image">
+                <img src="./assets/images/success-stories-thumbnail2.webp" alt="Success Stories">
             </div>
-            <div>
-                <h4>I chose Athabasca University for the flexibility and the ability to study from home. I have a daughter, and during the pandemic my daughter was home. So I wanted to be there for her. </h4>
-                <h5>Shari Braun</h5>
-                <h6>Bachelor of Science 2023</h6>
+            <div class="testimonial-content">
+                <h5>I chose Athabasca University for the flexibility and the ability to study from home. I have a daughter, and during the pandemic my daughter was home. So I wanted to be there for her. </h5>
+                <h6>Shari Braun</h6>
+                <p>Bachelor of Science 2023</p>
                 <a href="">Learn more about Shari's AU experience</a>
             </div>
         </div>
@@ -301,30 +315,36 @@
     <!-- Testimonial section ends -->
 
     <!-- Au news section starts -->
-     <section>
+     <section class="au-news-main">
         <div>
-            <div>
+            <div class="flex au-news-heading">
                 <h2>AU NEWS</h2>
-                <button>View All</button>
+                <button class="nav-btn au-news-btn">View All</button>
             </div>
-            <div>
-                <div>
-                    <h5>Students</h5>
-                    <img src="./au-1.png" alt="Student Image">
+            <div class="flex au-news-cards">
+                <div class="au-news-card">
+                    <h6>Students</h6>
+                    <img src="./assets/images/au-1.png" alt="Student Image">
+                   <div class="au-news-content">
                     <a href="">I started studying at AU at 16 and the transition from homeschool has been seamless</a>
                     <p>Athabasca University Bachelor of Arts, Psychology Major student Michelina Hamilton started pursuing a university degree at 16 years old.</p>
+                   </div>
                 </div>
-                <div>
-                    <h5>Research</h5>
-                    <img src="./au-2.png" alt="Research Image">
-                    <a href="">Violence ‘a human condition,’ AU researcher and war survivor tells refugee studies experts at Oxford</a>
+                <div class="au-news-card">
+                    <h6>Research</h6>
+                    <img src="./assets/images/au-2.png" alt="Research Image">
+                    <div class="au-news-content">
+                        <a href="">Violence ‘a human condition,’ AU researcher and war survivor tells refugee studies experts at Oxford</a>
                     <p>Dr. Veronica Fynn Bruey embraced the role of outsider during prestigious fellowship with the Africa-Oxford Initiative at the University of Oxford.</p>
+                    </div>
                 </div>
-                <div>
-                    <h5>Alumni</h5>
-                    <img src="./au-3.jpg" alt="Alumni Image">
-                    <a href="">Community collaboration helps address housing need in Simpcw First Nation</a>
+                <div class="au-news-card">
+                    <h6>Alumni</h6>
+                    <img src="./assets/images/au-3.jpg" alt="Alumni Image">
+                    <div class="au-news-content">
+                        <a href="">Community collaboration helps address housing need in Simpcw First Nation</a>
                     <p>AU MBA grad Philipp Gruner leads project to build energy-efficient housing in flood-prone community.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -332,49 +352,53 @@
     <!-- Au news section ends -->
 
     <!-- Upcoming events section starts -->
-    <section>
+    <section class="au-news-main">
         <div>
-            <div>
+            <div class="flex au-news-heading">
                 <h2>Upcoming events</h2>
-                <button>View All</button>
+                <button class="nav-btn au-news-btn">View All</button>
             </div>
-            <div>
-                <div>
-                    <img src="./events-1.jpg" alt="Events Image">
-                    <a href="">AU MBA for Executives Webinar</a>
-                    <div>
+            <div class="flex au-news-cards">
+                <div class="au-news-card">
+                    <img src="./assets/images/events-1.jpg" alt="Events Image">
+                    <div class="au-news-content">
+                        <a href="">AU MBA for Executives Webinar</a>
+                    <div class="flex">
                         <i class="fa-solid fa-clock"></i>
                         <p>April 16, 2025 10:00 AM - April 16, 2025 11:00 AM (MT)</p>
                     </div>
-                    <div>
+                    <div class="flex">
                         <i class="fa-solid fa-location-dot"></i>
                         <p>Online Event</p>
                     </div>
+                    </div>
                 </div>
-                <div>
-                    <h5>Research</h5>
-                    <img src="./events-2.jpg" alt="Events Image">
-                    <a href="">Faculty of Business new program student orientation</a>
-                    <div>
+                <div class="au-news-card">
+                    <img src="./assets/images/events-2.jpg" alt="Events Image">
+                    <div class="au-news-content">
+                        <a href="">Faculty of Business new program student orientation</a>
+                    <div class="flex">
                         <i class="fa-solid fa-clock"></i>
                         <p>April 16, 2025 12:00 PM - April 16, 2025 1:00 PM (MT)</p>
                     </div>
-                    <div>
+                    <div class="flex">
                         <i class="fa-solid fa-location-dot"></i>
                         <p>Online Event</p>
                     </div>
+                    </div>
                 </div>
-                <div>
-                    <h5>Alumni</h5>
-                    <img src="./events-3.jpg" alt="Events Image">
-                    <a href="">Science Outreach - Athabasca Book Talk—The Ecological Buffalo</a>
-                    <div>
+                <div class="au-news-card">
+                    <img src="./assets/images/events-3.jpg" alt="Events Image">
+                    <div class="au-news-content">
+                        <a href="">Science Outreach - Athabasca Book Talk—The Ecological Buffalo</a>
+                    <div class="flex">
                         <i class="fa-solid fa-clock"></i>
                         <p>April 16, 2025 7:00 PM - April 16, 2025 9:00 PM (MT)</p>
                     </div>
-                    <div>
+                    <div class="flex">
                         <i class="fa-solid fa-location-dot"></i>
                         <p>In-person event</p>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -383,37 +407,37 @@
     <!-- Upcoming events section ends -->
 
     <!-- Visit section starts -->
-     <section>
+     <section class="visit-main">
         <div>
-            <h2>Visit Nukskahtowin, our Indigenous meeting place</h2>
-            <h5>Athabasca University respectfully acknowledges that we are on and work on the traditional lands of the Indigenous Peoples (Inuit, First Nations, Métis) of Canada. We honour the ancestry, heritage, and gifts of the Indigenous Peoples and give thanks to them.</h5>
-            <div>
+            <h5>Visit Nukskahtowin, our Indigenous meeting place</h5>
+            <p>Athabasca University respectfully acknowledges that we are on and work on the traditional lands of the Indigenous Peoples (Inuit, First Nations, Métis) of Canada. We honour the ancestry, heritage, and gifts of the Indigenous Peoples and give thanks to them.</p>
+            <div class="banner-button">
                 <button><i class="fa-solid fa-greater-than"></i></button>
                 <a href="">Visit Nukskahtowin</a>
             </div>
-            <p>The word “inukshuk” means “in the likeness of a human.” For generations, Inuit have been creating these impressive stone markers on the vast Arctic landscape. Inukshuks serve several functions, including guiding travellers, warning of danger, assisting hunters and marking places of reverence.</p>
+            <p class="visit-main-para">The word “inukshuk” means “in the likeness of a human.” For generations, Inuit have been creating these impressive stone markers on the vast Arctic landscape. Inukshuks serve several functions, including guiding travellers, warning of danger, assisting hunters and marking places of reverence.</p>
         </div>
      </section>
     <!-- Visit section ends -->
 
     <!-- Footer section starts -->
-     <footer>
+     <footer class="footer-main">
         <section>
-            <div>
-                <img src="./logo.png" alt="Logo">
-                <h5>AU is Canada's Open University, offering open and flexible distance learning with world-class online courses, undergraduate and graduate degree programs, and professional development options.</h5>
+            <div class="flex footer-division">
+                <img src="./assets/images/au-logo.png" alt="Logo">
+                <p>AU is Canada's Open University, offering open and flexible distance learning with world-class online courses, undergraduate and graduate degree programs, and professional development options.</p>
             </div>
-           <div>
+           <div class="flex footer-links">
             <div>
                 <div>
-                    <h5>Academics</h5>
+                    <h6>Academics</h6>
                     <ul>
-                        <li><a href=""></a>Programs and courses</li>
-                        <li><a href=""></a>Professional development</li>
+                        <li><a href="">Programs and courses</a></li>
+                        <li><a href="">Professional development</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h5>AU faculties</h5>
+                <div class="footer-au-faculty">
+                    <h6>AU faculties</h6>
                     <ul>
                         <li><a href="">Business</a></li>
                         <li><a href="">Health Disciplines</a></li>
@@ -423,7 +447,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h5>Calendar</h5>
+                    <h6>Calendar</h6>
                     <ul>
                         <li><a href="">Undergraduate Calendar</a></li>
                         <li><a href="">Graduate Calendar</a></li>
@@ -431,7 +455,7 @@
                 </div>
             </div>
             <div>
-                <h5>Support</h5>
+                <h6>Support</h6>
                 <ul>
                     <li><a href="">Academic advising services</a></li>
                     <li><a href="">Education and career planning</a></li>
@@ -446,18 +470,18 @@
                 </ul>
             </div>
             <div>
-                <h5>Connect</h5>
+                <h6>Connect</h6>
                 <ul>
                     <li><a href="">Help and contact</a></li>
                 </ul>
-                <div>
+                <div class="footer-social-media">
                     <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
                     <a href=""><i class="fa-brands fa-instagram"></i> </a> 
                     <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     <a href=""><i class="fa-brands fa-youtube"></i></a>
                 </div>
-                <ul>
+                <ul class="footer-last-links">
                     <li><a href="">News</a></li>
                     <li><a href="">Media relations</a></li>
                     <li><a href="">Give to AU</a></li>
@@ -468,16 +492,16 @@
                 </ul>
             </div>
            </div>
-           <p>Athabasca University respectfully acknowledges that we are on and work on the traditional lands of the Indigenous Peoples (Inuit, First Nations, Métis) of Canada. We honour the ancestry, heritage, and gifts of the Indigenous Peoples and give thanks to them.</p>
+           <p class="footer-para">Athabasca University respectfully acknowledges that we are on and work on the traditional lands of the Indigenous Peoples (Inuit, First Nations, Métis) of Canada. We honour the ancestry, heritage, and gifts of the Indigenous Peoples and give thanks to them.</p>
         </section>
      </footer>
     <!-- Footer section ends -->
 
     <!-- Copy right section starts -->
-     <section>
-        <div>
+     <section class="copy-right-main">
+        <div class="flex copy-right-division">
             <div>
-                <ul>
+                <ul class="flex copy-right-links">
                     <li><a href="">Bargaining</a></li>
                     <li><a href=""> Privacy Policy</a></li>
                     <li><a href="">Cookie Preferences</a></li>
@@ -491,10 +515,8 @@
     <!-- Copy right section ends -->
 
     <!-- Back to top section starts -->
-     <section>
-        <div>
+     <section class="back-to-top">
             <button><a href="#">^ Back to top</a></button>
-        </div>
      </section>
     <!-- Back to top section ends -->
        

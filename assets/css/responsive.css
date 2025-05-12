@@ -1,0 +1,41 @@
+/* Screen size : laptop */
+
+@media(max-width : 1100px){
+    h1{
+        color: green;
+        font-size: 20px;
+    }
+    .header-section{
+        display: none;
+    }
+    .header-responsive{
+        display: block;
+    }
+    .header-main {
+        padding: 3px 20px;
+    }
+}
+
+/* Screen size : tablet */
+
+@media(max-width : 1023px){
+    h1{
+        color: blue;
+        font-size: 100px;
+    }
+}
+
+/* Screen size : mobile */
+
+@media(max-width : 425px) and (min-width : 320px){
+    h1{
+        color: orange;
+        font-size: 50px;
+    }
+    img{
+        display: block;
+    }
+    ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

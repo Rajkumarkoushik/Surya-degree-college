@@ -475,7 +475,7 @@ img[alt="image3"]{
     border-radius: 50%;
 } */
 
-
+/* 
 .sec{
     display: grid;
     place-items: center;
@@ -512,4 +512,21 @@ textarea{
 .flex{
     display: flex;
     gap: 30px;
+} */
+
+h1{
+    color: red;
+    font-size: 10rem;
+}
+
+img{
+    display: none;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem 2rem;
+}
+li{
+    border: 2px solid red;
 }
