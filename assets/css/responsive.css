@@ -1,41 +1,130 @@
-/* Screen size : laptop */
-
-@media(max-width : 1100px){
+/* 1024 screen size */
+@media(max-width: 1100px){
     h1{
-        color: green;
-        font-size: 20px;
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 31px;
+    }
+    h5 {
+        font-size: 22px;
     }
     .header-section{
         display: none;
     }
-    .header-responsive{
+    .header-second-sec, .hamburger{
         display: block;
     }
-    .header-main {
-        padding: 3px 20px;
+    .header-second-sec h6{
+        padding-bottom: 0px;
     }
-}
-
-/* Screen size : tablet */
-
-@media(max-width : 1023px){
-    h1{
-        color: blue;
-        font-size: 100px;
+    .nav-links{
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0px;
+        background: #fff;
+        width: 30%;
+        gap: 10px;
+        padding: 20px 0px;
+        display: none;
     }
-}
-
-/* Screen size : mobile */
-
-@media(max-width : 425px) and (min-width : 320px){
-    h1{
-        color: orange;
-        font-size: 50px;
+    .nav-links a{
+        color: var(--secondary-color);
     }
-    img{
-        display: block;
+    .banner-heading::after{
+        right: -16px;
     }
-    ul{
+    .admission-division{
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        justify-items: center;
+    }
+    .admission-card{
+        flex-direction: column;
+        text-align: center;
+    }
+    .online-offerings-image img{
+        height: 85%;
+    }
+    .select-path-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .select-path-card-image {
+        width: 20%;
+        height: 28%;
+    }
+    .testimonial-main{
+        padding: 5rem;
+    }
+    .au-news-main, .visit-main, .footer-main{
+        padding: 5rem 2rem;
+    }
+}
+
+/* 768 screen size */
+@media(max-width: 1023px){
+    h1{
+        font-size: 28px;
+    }
+    .banner-heading h1, .banner-content{
+        width: 100%;
+    }
+    .online-offerings-division{
+        flex-direction: column;
+    }
+    .online-offerings-image img {
+        height: 300px;
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+    .select-path-card-image {
+        width: 28%;
+        height: 25%;
+    }
+    .testimonial-division {
+        flex-direction: column;
+        text-align: center;
+    }
+    .au-news-cards {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .footer-division{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .footer-links a {
+        font-size: 13px;
+    }
+    .footer-social-media i{
+        font-size: 23px;
+    }
+    .copy-right-links {
+        gap: 4px;
+        flex-direction: column;
+    }
+}
+
+/* Mobile screen 320px to 425px */
+
+@media(max-width : 425px) and (min-width: 320px){
+    .navigation-btn{
+        display: none;
+    }
+    .hamburger i {
+        font-size: 26px;
+        padding-left: 0px;
+    }
+    .banner-division{
+        flex-direction: column;
+        justify-content: initial;
+    }
+    .banner-division p, .banner-heading::after{
+        display: none;
     }
 }
