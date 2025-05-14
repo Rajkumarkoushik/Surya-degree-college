@@ -127,4 +127,69 @@
     .banner-division p, .banner-heading::after{
         display: none;
     }
+    .header-second-sec h6{
+        font-size: 13px;
+    }
+    .header-main{
+        padding: 10px 20px;
+    }
+    .nav-logo img {
+        height: 40px;
+    }
+    .banner-division{
+        visibility: hidden;
+    }
+    .admission-division, .select-path-cards, .au-news-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+        .online-offerings-image img {
+        height: 194px;
+        width: 75%;
+    }
+    .online-offerings-cards {
+    flex-direction: column;
+    }
+    .select-path-head h2{
+        font-size: 24px;
+    }
+    .select-path-card-image {
+        width: 36%;
+        height: 19%;
+    }
+        .testimonial-main {
+        padding: 5rem 2rem;
+    }
+    .testimonial-content h5{
+        font-size: 18px;
+    }
+    .au-news-heading h2{
+        font-size: 23px;
+    }
+    .footer-links {
+        flex-direction: column;
+    }
+    .copy-right-main {
+        padding: 1.5rem 1rem;
+    }
+    .footer-para{
+        font-size: 13px;
+    }
+    .back-to-top{
+        left: 35%;
+    }
+    .banner-main {
+        background-attachment: scroll;
+        height: 80vh;
+    }
+    .home-banner-content{
+        display: block;
+        text-align: center;
+        padding: 1rem 0px;
+        background-color: var(--secondary-color);
+        color: #fff;
+    }
+    .home-banner-content h2{
+        font-size: 24px;
+    }
+
 }

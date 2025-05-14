@@ -261,6 +261,9 @@ p{
     color: #fff;
     font-weight: 600;
 }
+.home-banner-content{
+    display: none;
+}
 
 /* 3. Home banner section ends. */
 
