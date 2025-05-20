@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0px !important;
+}
+a{
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+a:hover{
+    text-decoration: underline !important;
+    color: #fff !important;
+}
+li{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6{
+    padding-bottom: 10px;
+}
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 42px;
+}
+h3{
+    font-size: 36px;
+}
+h4{
+    font-size: 30px;
+}
+h5{
+    font-size: 24px;
+}
+h6{
+    font-size: 20px;
+    color: #1B365D;
+    font-weight: 600;
+}
+p{
+    font-size: 15px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+:root{
+    --primary-color : #0072A5;
+    --secondary-color : #1B365D;
+    --third-color : #F15A22;
+    --fourth-color : #ada8a8;
+}
+
+/* 
+1. Header section.
+2. Nav section.
+3. Home Banner section.
+*/
+
+
+/* 1. Header section starts. */
+.header-main{
+    background-color: var(--primary-color);
+}
+.header-links{
+    gap: 30px;
+}
+.header-links a, .header-links li{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.faculty-links, .nav-sublinks{
+    background-color: #fff;
+    width: 300px;
+    padding: 10px 30px;
+    display: none;
+    top: 17px;
+    left: -100px;
+    transition: all 0.8s ease-in-out;
+    z-index: +9999;
+}
+.faculty-links a, .nav-sublinks a{
+    color: #0072A5;
+}
+.faculty-links li, .nav-sublinks li{
+    padding: 5px 0px;
+}
+.faculty-links li:hover, .nav-sublinks li:hover{
+    background-color: var(--fourth-color);
+    text-decoration: none;
+}
+.faculty:hover .faculty-links, .nav-link:hover .nav-sublinks{
+    display: block;
+    transition: all 0.8s ease-in-out;
+}
+.header-second-sec h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+.header-second-sec{
+    display: none;
+}
+/* 1. Header section ends. */
+
+/* 2. Nav section starts. */
+.nav-main{
+    background-color: var(--secondary-color);
+    top: 0px;
+    z-index: 999;
+}
+.nav-links{
+    gap: 30px;
+}
+.nav-links a{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+.nav-logo img{
+    width: 100%;
+    height: 50px;
+}
+.nav-sublinks{
+    display: none;
+}
+.nav-sublinks a{
+    color: var(--primary-color);
+}
+.nav-link{
+    padding: 0px !important;
+}
+.nav-btn{
+    padding: 6px 15px;
+    border: 2px solid var(--third-color);
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.8s ease-in-out;
+}
+.nav-btn:hover{
+    background-color: var(--third-color);
+    transition: all 0.8s ease-in-out;
+}
+.nav-link::after{
+    content: "\f103";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    font-size: 12px;
+    color: #F15A22;
+}
+.nav-last{
+    gap: 20px;
+}
+.nav-last a{
+    color: #fff;
+    padding-left: 20px;
+}
+.hamburger i{
+    font-size: 34px;
+    padding-left: 20px;
+}
+.hamburger{
+    display: none;
+}
+/* 2. Nav section ends. */
+
+/* 3. Home banner section starts. */
+.banner-main{
+    background-image: url("../images/hero-image-bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner-main::after{
+    content: "";
+    background-color: #24232360;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.8;
+}
+.banner-division{
+    height: 100vh;
+    padding: 20px 30px;
+    z-index: +11;
+}
+.banner-heading::after{
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: var(--third-color);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.banner-heading h1, .banner-content{
+    color: #fff;
+    padding-left: 30px;
+    font-weight: 900;
+}
+.banner-button button{
+    border-radius: 50%;
+    padding: 7px 13px;
+    border: none;
+    background-color: var(--third-color);
+    /* animation: blink 2s linear infinite; */
+}
+.banner-button i{
+    color: #fff;
+    cursor: pointer;
+}
+.banner-button:hover button{
+    animation: blink 2s linear infinite;
+}
+@keyframes blink {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.banner-button a{
+    color: #fff;
+    font-weight: 600;
+}
+.home-banner-content{
+    display: none;
+}
+
+/* 3. Home banner section ends. */
+
+/* 4. Home admission section starts. */
+.admission-card img{
+    height: 25px;
+}
+.admission-img{
+    padding: 12px 17px;
+    border-radius: 50%;
+}
+.admission-card {
+    gap: 10px;
+}
+.img1{
+    border: 8px solid var(--third-color);
+}
+.img2{
+    border: 8px solid var(--fourth-color);
+}
+.img3{
+    border: 8px solid var(--primary-color);
+}
+.img4{
+    border: 8px solid var(--secondary-color);
+}
+.admission-button a{
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+.admission-button a:hover{
+    color: var(--primary-color);
+}
+.admission-button button{
+    padding: 2px 7px;
+}
+.admission-button i{
+    font-size: 8px;
+}
+.admission-button{
+    padding-bottom: 10px;
+}
+.admission-division a{
+    font-size: 12px;
+}
+.admission-division a:hover{
+    color: var(--primary-color) !important;
+}
+/* 4. Home admission section ends. */
+
+/* 5. Online offerings section starts. */
+.online-offerings-main{
+    background-image: url("../images/home-stats-bg-md.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.online-offerings-image img{
+    width: 100%;
+    height: 100%;
+}
+.select-path-cards{
+    gap: 30px;
+}
+.online-offerings-cards{
+    padding-top: 3rem;
+}
+.online-offerings-content h3{
+    padding-bottom: 50px;
+    color: var(--secondary-color);
+}
+.online-offerings-cards h6{
+    color: var(--third-color);
+}
+.online-offerings-cards h2{
+    color: var(--secondary-color);
+    font-size: 4rem;
+}
+.online-offerings-cards p{
+    color: var(--secondary-color);
+    font-size: 14px;
+}
+.online-offerings-button{
+    gap: 15px;
+}
+.online-offerings-button a{
+    color: var(--primary-color);
+}
+/* 5. Online offerings section ends. */
+
+/* 6. Select path section starts. */
+.select-path-card-image img{
+    height: 50px;
+}
+.select-path-card-image{
+    border: 4px solid var(--third-color);
+    border-radius: 50%;
+    width: 33%;
+    padding: 10px;
+    height: 22%;
+    background-color: #fff;
+}
+.select-path-card{
+    background-color: var(--secondary-color);
+    padding: 3rem 1rem;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+.select-path-card:hover{
+    transform: scale(1.04);
+    transition: all 0.4s ease-in-out;
+}
+.select-path-card h6::after{
+    content: "";
+    background-color: var(--third-color);
+    width: 20%;
+    height: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.select-path-card p{
+    color: #fff;
+    padding: 20px 0px;
+}
+.select-path-card-button a{
+    font-size: 12px;
+}
+.select-path-head{
+    text-align: center;
+    padding: 20px 0px;
+    color: var(--secondary-color);
+}
+/* 6. Select path section ends. */
+
+/* 7. Testimonial section starts. */
+.testimonial-main{
+    background-image: url("../images/shield-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 8rem;
+}
+.testimonial-image img{
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    border: 8px solid var(--third-color);
+}
+.testimonial-division{
+    gap: 20px;
+    align-items: center;
+}
+.testimonial-content h5::before{
+    content: "\f10d";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    color: var(--third-color);
+    padding-right: 10px;
+}
+.testimonial-content h5::after{
+    content: "\f10e";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    color: var(--third-color);
+    padding-left: 10px;
+}
+.testimonial-content h5{
+    color: var(--secondary-color);
+}
+/* 7. Testimonial section ends. */
+
+/* 8. Au news section starts. */
+.au-news-main{
+    padding: 5rem 8rem;
+}
+.au-news-heading{
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.au-news-btn{
+    color: #000;
+}
+.au-news-btn:hover{
+    color: #fff;
+}
+.au-news-cards{
+    gap: 30px;
+}
+.au-news-card img{
+    width: 100%;
+}
+.au-news-card{
+    box-shadow: 0px 0px 3px 1px #777676;
+    position: relative;
+}
+.au-news-content{
+    padding: 10px 20px;
+}
+.au-news-content p{
+    padding: 10px 0px;
+    font-size: 12px;
+}
+.au-news-card h6{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    width: 30%;
+    color: #fff;
+}
+.au-news-content div{
+    align-items: center;
+    gap: 10px;
+}
+.au-news-content div i{
+    color: var(--third-color);
+}
+
+/* 8. Au news section ends. */
+
+/* 9. Visit main section starts. */
+.visit-main{
+    background-image: url("../images/indegenious-bg-md.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 10rem;
+    text-align: center;
+    color: #fff;
+    background-attachment: fixed;
+}
+.visit-main h5{
+    position: relative;
+    padding-bottom: 30px;
+}
+.visit-main h5::after{
+    content: "";
+    background-color: var(--third-color);
+    height: 5px;
+    width: 10%;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.visit-main-para{
+    padding-top: 5rem;
+}
+/* 9. Visit main section ends. */
+
+/* 10. Footer section starts. */
+.footer-main{
+    background-color: var(--secondary-color);
+    padding: 5rem 10rem;
+    color: #fff;
+}
+.footer-division{
+    gap: 4rem;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.footer-links{
+    justify-content: space-between;
+}
+.footer-links h6{
+    color: #fff;
+}
+.footer-links li::after{
+    content: "\3e";
+    font-family: "Font Awesome 5 free";
+    font-size: 900;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 10px;
+}
+.footer-links li{
+    color: #fff;
+    padding: 7px 0px;
+}
+.footer-links a{
+    color: #fff;
+}
+.footer-social-media i{
+    font-size: 40px;
+    padding: 10px 0px;
+    padding-right: 10px;
+}
+.footer-social-media i:hover{
+    transform: scale(1.1);
+}
+.footer-last-links a{
+    font-weight: 700;
+}
+.footer-au-faculty, .footer-para{
+    padding: 15px 0px;
+}
+/* 10. Footer section ends. */
+
+/* 11. Copy right section starts. */
+.copy-right-main{
+    background-color: var(--primary-color);
+    padding: 1.5rem 5rem;
+}
+.copy-right-division{
+    justify-content: space-between;
+    color: #fff;
+}
+.copy-right-links{
+    gap: 20px;
+}
+.copy-right-links a{
+    color: #fff;
+    font-size: 14px;
+}
+.back-to-top{
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    z-index: 99999;
+}
+.back-to-top button{
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    border: none;
+}
+.back-to-top button a{
+    color: #fff;
+}
+.copy-right-main p{
+    padding-bottom: 0px;
+}
+/* 11. Copy right section ends. */
+
